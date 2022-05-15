@@ -1,2 +1,3 @@
 # projeto-rocketseat
-Aplicação que estou construindo junto ao  projeto Next Level Week da escola de programção RocketSeat.
+Aplicação que estou construindo junto ao  projeto Next Level Week da escola de programção RocketSeat.<br>
+Meu primeiro contato com CSS.
