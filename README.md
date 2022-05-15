@@ -1,7 +1,8 @@
 # Projeto página de plano de saúde
 
+Meu primeiro contato com CSS.<br>
 Aplicação que estou desenvolvendo conforme o projeto *Next Level Week* da escola de programção **RocketSeat**.<br>
-Meu primeiro contato com CSS.
+
 
 <details align="left">
   <summary><b>Credits</b></summary> 
