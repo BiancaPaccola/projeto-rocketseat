@@ -10,7 +10,16 @@
     --bege-clarissimo: #FFFAF1;
     --verde-clarissimo: #DCE9E2;
     --verde-claro: #c7f1ea;
+    --altura-menu: 7.2rem;
 }
+
+header, nav{
+    width: 37.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.4rem;
+}
+
 body {
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Poppins', sans-serif;
@@ -18,11 +27,21 @@ body {
     text-align: center;
 }
 header{
-    margin-top: 4.1rem;
-    width: 37.5rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: calc(4.1rem + var(--altura-menu) );
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: var(--altura-menu);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--verde-claro);
+}
+
 h4 {
     font-size: 1.4rem;
     color: var(--cor-primaria);
@@ -40,7 +59,7 @@ h1 {
     margin-bottom: 2.4rem;
 }
 p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 150%;
     color: var(--cinza-claro);
     margin-bottom: 3.2rem; 
@@ -58,7 +77,7 @@ button {
     font-size: 1.4rem;
     font-weight: 700;
     
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
@@ -67,7 +86,7 @@ button {
 header img {
     display: block;
     margin-inline: auto;
-    width: 26.4rem; /* necessário declarar o tamanho da imagem para configurações de acessiblidade (mudança no tamanho padrão da fonte do navegador) */
+    width: 32rem; /* necessário declarar o tamanho da imagem para configurações de acessiblidade (mudança no tamanho padrão da fonte do navegador) */
 
 }
 .stats{
@@ -77,7 +96,7 @@ header img {
     margin-inline: auto; /* mesmo que margin-left e margin-right = auto */
     
     background-color: var(--bege-clarissimo);
-    border: 1.5px solid var(--verde-clarissimo);
+    border: 0.5px solid var(--verde-clarissimo);
     border-radius: 0.6rem;
     
     display: flex;
@@ -98,7 +117,7 @@ header img {
 header::before {
     content: '';
     width: 100vw; /* tamanho da janela */
-    height: 100rem;
+    height: calc(108rem + var(--altura-menu));
     background-color: var(--verde-claro);
     display: block;
     
