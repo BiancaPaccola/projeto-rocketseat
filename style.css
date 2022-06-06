@@ -13,7 +13,7 @@
     --altura-menu: 7.2rem;
 }
 
-header, nav{
+header, .menu{
     width: 37.5rem;
     margin-right: auto;
     margin-left: auto;
@@ -30,16 +30,33 @@ header{
     margin-top: calc(4.1rem + var(--altura-menu) );
 }
 
-nav{
+nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     height: var(--altura-menu);
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--verde-claro);
+    text-decoration: none;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.rolagem {
+    background-color: var(--cor-primaria);
+    width: 100vw;
+}
+
+nav.rolagem svg:nth-child(1) path {
+    fill: white;
+}
+
+nav.rolagem svg:nth-child(2) path {
+    stroke: white;
 }
 
 h4 {
